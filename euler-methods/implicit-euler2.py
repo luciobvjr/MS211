@@ -10,8 +10,8 @@ def F_newton(yf,xf,y0,h):
     return yf - y0 - h*(yf + np.cos(yf) - xf)
 
 def Euler_implicito():
-    h = float(input('Valor de h = '))
-    xbar = float(input('Valor de x = '))
+    h = float(input('h value = '))
+    xbar = float(input('x value = '))
     n = (xbar - 1) / h 
     n = int(n)
     x = np.zeros(n+1)
@@ -23,7 +23,7 @@ def Euler_implicito():
         x[i+1] = x[i] + h
         y[i+1] = y[i] + h * F(x[i+1],fsolve(F_newton,[y[i]],(x[i+1],y[i],h)))
     
-    print('O valor de y correspondente =',y[-1])
+    print('Corresponding y value =',y[-1])
     plt.plot(x,y)
     plt.show()
 
