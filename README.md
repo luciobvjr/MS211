@@ -6,3 +6,5 @@
 **bissection.py** uses the bissection method to find the interception of the function `h = xˆ3 - 3.5x` with de abcissa axis.
 - input: Upper and lower limits, accuracy
 - output: Abcissa value in the interception, number of iterations and execution time.
+### - False position (Regula Falsi)
+**false-position.py** is similar to the bissection, the only difference is the numerical method used to solve the problem.
