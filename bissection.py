@@ -19,7 +19,7 @@ while True:
     if fabs(h(m)) < e:
         print()
         print('Abcissa value in the interception =', m)
-        print('Number of interations =', k)
+        print('Number of iterations =', k)
         break
     else:
         k += 1
